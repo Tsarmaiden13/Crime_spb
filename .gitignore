@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+*.pyc
+__pycache__/
+.vscode/
+
+data/
+не пушить/
+*.log
+*.tmp
+.env
