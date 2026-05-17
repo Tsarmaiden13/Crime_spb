@@ -7,7 +7,7 @@ from layout_groups import create_groups_layout
 from callbacks import register_callbacks
 from callbacks_group import register_group_callbacks
 from upload_callbacks import register_upload_callbacks
-from monthly_mode_callbacks import register_monthly_mode_callbacks
+from monthly_mode_callbacks import register_monthly_callbacks
 
 
 crime_data = load_crime_data()
@@ -43,7 +43,7 @@ def display_page(pathname):
 register_callbacks(app, crime_data)
 register_group_callbacks(app, crime_data)
 register_upload_callbacks(app)
-register_monthly_mode_callbacks(app, crime_data)
+register_monthly_callbacks(app, crime_data)
 
 
 if __name__ == "__main__":
